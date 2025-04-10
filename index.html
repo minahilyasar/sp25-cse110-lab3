@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Meeting Minutes Team 8 Weekly">
+    <title>Meeting Minutes</title>
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+        <div>
+            <h1>Team 8 Weekly Meeting</h1>
+            <h2>Check-in</h2>
+            <h3>Date: Wednesday April 9th</h3>
+    </div>
+    </header>
+
+    <nav>
+        <a href="/html/">HTML</a>
+    </nav>
+
+    <section>
+        <h3>Attendance</h3>
+        <ul>
+            <li>Michael Scott</li>
+            <li>Dwight Schrute</li>
+            <li>Jim Halpert</li>
+            <li>Pam Beesly</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Agenda</h3>
+        <ol>
+            <li><i>Progress Update</i></li>
+            <li>Review of previous meeting</li>
+            <li>Bug Review</li>
+        </ol>
+        <img src="https://images.ctfassets.net/w6r2i5d8q73s/35z1WmRtjF6YGNv3z4xED8/23bc67d0f721255012a6cbe4ca04ecfd/software-architecture-diagram-tool_hero_xxl_sub-use-case_img_EN">
+    </section>
+
+    <section>
+        <h3>Unfinished Business</h3>
+        <p>We had discussed adding some <b>new features</b> but their implementation has not been completed.
+        The progress update cannot be <span>correctly evaluated </span> until their implementations are discussed in-depth.
+        </p>
+    </section>
+
+    <section>
+        <h3>New Business</h3>
+        <p>There are some <strong>new ideas</strong> being considered, such as client feedback forms.
+            <br> Everyone should also have completed their <i>Progress Update</i> report by the next weekly meeting</p>
+    </section>
+
+    <section>
+        <h3>Discussion</h3>
+        <p>Take the last couple of minutes of the meeting to discuss comments or concerns anyone has</p>
+    
+        <details>
+            <summary>Show team concerns</summary>
+            <ul>
+                <li>Client feedback was unclear</li>
+                <li>Project scope might need adjustment</li>
+                <li>Jim suggests reviewing timelines</li>
+            </ul>
+        </details>
+    </section>
+
+    <hr>
+
+    <main>
+        <h3>Progress Update Report</h3>
+        <form>
+            <fieldset>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+
+                <label for="report date">Date:</label>
+                <input type="date" id="report date" name="report date"><br><br>
+
+                <h4>Please mark your progress</h4>
+                <input type="radio" id="On Track" name="progress">
+                <label for="On Track">On Track</label><br>
+                <input type="radio" id="Lagging" name="progress">
+                <label for="Lagging">Lagging Behind</label><br>
+                <input type="radio" id="help" name="progress"> 
+                <label for="help">Need Serious help (<em>arranging a meeting</em>)</label><br><br>
+
+                <label for="summary">Progress Summary</label><br>
+                <textarea id="summary" name="summary"></textarea><br><br>
+
+                <h4>Working with:</h4>
+                <label for="tool">Select or type a tool:</label>
+                <input list="tools" id="tool" name="tool">
+                <datalist id="tools">
+                    <option value="GitHub">
+                    <option value="VS Code">
+                    <option value="Figma">
+                    <option value="Miro">
+                </datalist><br><br>
+
+                <label>
+                    <input type="checkbox" name="bugs"> I ran into bugs:
+                </label><br>
+                <textarea id="bugs" name="bugs"></textarea><br><br>
+
+                <label for="steps">Next Steps:</label>
+                <select id="steps" name="steps">
+                    <option value="brainstorming">Brainstorming</option> 
+                    <option value="implement">Start Implementing</option>
+                    <option value="testing">Start Testing</option>
+                </select><br><br>
+
+
+                <button type="submit">Submit Report</button>
+
+            </fieldset>
+        </form><br>
+        <div>
+            <p>A short demo to help with filling out the form:</p>
+            
+            <video controls>
+              <source src="https://youtu.be/-eZeI3dZutk" type="video/mp4">
+              Your browser does not support the video tag.
+            </video><br><br>
+            
+            <audio controls>
+              <source src="demo_audio.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio><br><br>
+          </div>
+    </main> 
+
+    <footer>
+        <details>
+            <summary>Meeting Summary</summary>
+            <p>This meeting included check-ins, review of unfinished tasks, discussion of new features, and a form to submit weekly progress updates.</p>
+        </details>
+    </footer>
+
+  </body>
+</html>
