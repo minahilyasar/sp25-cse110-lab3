@@ -4,33 +4,37 @@
     <meta charset="utf-8">
     <title>Meeting Minutes</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
+        <h1 style="color: rgb(10, 34, 121);">Team 8 Weekly Meeting</h1>
+        </header>
         <div>
-            <h1>Team 8 Weekly Meeting</h1>
             <h2>Check-in</h2>
             <h3>Date: Wednesday April 9th</h3>
     </div>
-    </header>
+    
 
     <nav>
         <a href="https://github.com/minahilyasar/Lab2_Starter/">My Github Page</a>
     </nav>
 
-    <section>
+    <section id="team">
         <h3>Attendance</h3>
-        <ul>
+        <ul class="flex-attendance">
             <li>Michael Scott</li>
             <li>Dwight Schrute</li>
             <li>Jim Halpert</li>
             <li>Pam Beesly</li>
         </ul>
     </section>
+    
 
-    <section>
+    <section id="agenda">
         <h3>Agenda</h3>
-        <ol>
+        <ol class="flex-agenda">
             <li><i>Progress Update</i></li>
             <li>Review of previous meeting</li>
             <li>Bug Review</li>
@@ -38,6 +42,27 @@
         <img src="https://images.ctfassets.net/w6r2i5d8q73s/35z1WmRtjF6YGNv3z4xED8/23bc67d0f721255012a6cbe4ca04ecfd/software-architecture-diagram-tool_hero_xxl_sub-use-case_img_EN" 
         alt="architecture diagram">
     </section>
+
+    <section id="team-progress">
+        <h3>Goals and Progress</h3>
+        <div class="grid-progress">
+          <div class="header">Participant</div>
+          <div class="header">Priorities Since Last Meeting</div>
+          <div class="header">Priorities Until Next Meeting</div>
+      
+          <div>Minahil</div>
+          <div>Finalized Lab 2</div>
+          <div>Start CSS styling tasks</div>
+      
+          <div>John</div>
+          <div>Worked on README</div>
+          <div>Begin debugging</div>
+      
+          <div>Jane</div>
+          <div>Worked on Project</div>
+          <div>Start CSS styling tasks</div>
+        </div>
+      </section>  
 
     <section>
         <h3>Unfinished Business</h3>
@@ -73,13 +98,13 @@
         <form>
             <fieldset>
                 <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname"><br><br>
+                <input id="flex" type="text" id="fname" name="fname"><br><br>
 
                 <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname"><br><br>
+                <input id="flex" type="text" id="lname" name="lname"><br><br>
 
                 <label for="reportdate">Date:</label>
-                <input type="date" id="reportdate" name="reportdate"><br><br>
+                <input id="flex"  type="date" id="reportdate" name="reportdate"><br><br>
 
                 <h4>Please mark your progress</h4>
                 <input type="radio" id="OnTrack" name="progress">
@@ -94,7 +119,7 @@
 
                 <h4>Working with:</h4>
                 <label for="tool">Select or type a tool:</label>
-                <input list="tools" id="tool" name="tool">
+                <input id="flex" list="tools" id="tool" name="tool">
                 <datalist id="tools">
                     <option value="GitHub">
                     <option value="VS Code">
@@ -107,7 +132,7 @@
                 </label><br>
                 <textarea id="bugs" name="bugs"></textarea><br><br>
 
-                <label for="steps">Next Steps:</label>
+                <label  for="steps">Next Steps:</label>
                 <select id="steps" name="steps">
                     <option value="brainstorming">Brainstorming</option> 
                     <option value="implement">Start Implementing</option>
@@ -122,7 +147,7 @@
         <div>
             <p>A short demo to help with filling out the form:</p>
             
-            <video  width="1500" height="1550" controls>
+            <video controls>
               <source src="demo.mp4" type="video/mp4">
             </video><br><br>
             
