@@ -61,6 +61,7 @@ nav a {
   nav a:hover {
     background-color: #ffffff;
     color: #000000;
+    font-weight: bold;
   }
   
   /* color mix*/
@@ -143,6 +144,7 @@ footer{
     text-align: center;
     border-radius: 5px;
   }
+  /* responsive css */
   @media (max-width: 768px) {
     .flex-agenda {
       flex-direction: column;
@@ -152,5 +154,22 @@ footer{
       grid-template-columns: 1fr;
     }
   }
-  
-  
+
+  /* CSS selectors */
+  * {
+    box-sizing: border-box;
+  }
+  input[type="text"] {
+    border: 1px solid #999;
+    border-radius: 5px;
+  }
+  h2, h3 {
+    font-style: normal;
+  }
+  section > p {
+    color: #3400a4;
+  }
+  form:has(input[type="date"]) input[type="text"] {
+    border-color: #995a97;
+    border-width: 0.5mm;
+  }
